@@ -1,0 +1,179 @@
+/* General Styles */
+.about{
+    padding: 0 3rem 0 3rem;
+    /* display: flex; */
+    /* height: 30rem; */
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    /* margin-bottom: 13rem; */
+    /* scroll view */
+    /* padding-top: 3rem; */
+}
+  
+  /* Main Container */
+  .about-me {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px 20px 20px;
+  
+    gap: 20px;
+ 
+  }
+  .a-title {
+    font-size: 2.5rem; /* equivalent to text-4xl */
+    text-align: center;
+    font-weight: bold; /* equivalent to font-semibold */
+    margin-bottom: 2.5rem; /* equivalent to mb-10 */
+    color: #d4d1d1; /* For "text-mine-shaft-100" equivalent */
+}
+
+.highlighted-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff9a00; /* For "text-bright-sun-40" equivalent */
+}
+  /* Left Section */
+  .left-section {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Right Section */
+  /* .right-section:nth-child(1) */
+  .right-section {
+    flex: 2;
+    max-width: 600px;
+   color: #d4d1d1;
+
+  }
+  
+  .right-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    /* color: #333; */
+  }
+  
+  .right-section p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    /* color: #555; */
+  }
+  
+  .details {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .details li {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #828181;
+  }
+  
+  .details li strong {
+    font-size: 22px;
+    color: var(--orange);
+  }
+  /* download button */
+  .s-button {
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+  }
+
+  /* Responsive Styles */
+
+  /* @media (max-width: 876px) {
+    .right-section p {
+      font-size: 19px;
+    }
+    .details li strong {
+      font-size: 20px;
+    }
+    .details li {
+      font-size: 19px;
+    }
+  } */
+  @media (max-width: 1024px) {
+    .profile-image {
+      width: 111%;
+      max-width: 300px;
+      padding-right: 1vh;
+    }
+    .right-section p {
+      font-size: 22px;
+    }
+    .details li  {
+      font-size: 20px;
+    }
+    .details li strong {
+      font-size: 19px;
+    }
+.right-section{
+  padding-left: 2rem;
+}
+  }
+  @media (max-width:805px) {
+    .a-title {
+      font-size: 2rem; /* Slightly smaller font on medium screens */
+  }
+  .about{
+    padding: 0 0rem 0 0rem;
+  }
+  }
+  @media (max-width: 750px) {
+    .a-title {
+      font-size: 1.75rem; /* Smaller font for tablets and smaller screens */
+      /* margin-top: 0rem;
+      margin-bottom: 2rem; */
+  }
+  .a-title>:nth-child(1){
+      font-size: 1.75rem;
+  }
+    .about-me {
+      flex-direction: column;
+      width: 54vw;
+      padding-left: 79px;
+    
+    }
+    .profile-image {
+      width: 76%;
+    }
+    .left-section,
+    .right-section {
+      max-width: 100%;
+    }
+  
+    .right-section h2 {
+      text-align: center;
+    }
+  
+    .right-section p,
+    .details li {
+      text-align: center;
+    }
+    .s-button {
+      width: 8rem;
+      height: 2rem;
+      margin-top: 1rem;
+      margin-left: 10vw;
+    }
+  }
+  @media (max-width: 529px) {
+    .about-me{
+      padding-left: 60px;
+    }
+    
+  }

@@ -1,0 +1,92 @@
+.floatingDiv {
+  justify-content: space-around;
+  background: white;
+  box-shadow: var(--boxShadow);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  padding: 0px 28px 0px 0px;
+  height: 4.5rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(3, 3, 167);
+  box-shadow: 0 0 20px rgb(3, 3, 167);
+}
+.floatingDiv > img {
+  transform: scale(0.4);
+}
+.floatingDiv > span {
+  font-family: sans-serif;
+  font-size: 24px;
+  /* yahan ye color add kia hy bad mein dark mode k waqt */
+  /* color: black; */
+}
+.floatingDiv>:nth-child(2){
+  font-size: 22px;
+}
+.floatingDiv>:nth-child(1){
+height: 17vh;
+width: 10vw;
+}
+@media (max-width:1920px) {
+  .floatingDiv>:nth-child(1){
+    height: 16vh;
+    width: 8vw;
+  }
+}
+@media (max-width:1000px) {
+  .floatingDiv>:nth-child(1){
+    height: 11vh;
+    width: 8vw;
+  }
+  .floatingDiv>:nth-child(2){
+    font-size: 15px;
+  }
+  .floatingDiv{
+    padding: 0px 20px 0px 0px;
+    height: 3.9rem;
+  }
+}
+
+@media (max-width:805px) {
+  .floatingDiv>:nth-child(1){
+    height: 9vh;
+    width: 7.5vw;
+  }
+  .floatingDiv>:nth-child(2){
+    font-size: 12px;
+  }
+  .floatingDiv{
+    padding: 0px 18px 0px 0px;
+    height: 3rem;
+  }
+}
+
+@media (max-width:750px) {
+  .floatingDiv>:nth-child(1){
+    height: 9vh;
+    width: 7.5vw;
+  }
+  .floatingDiv>:nth-child(2){
+    font-size: 12px;
+  }
+  .floatingDiv{
+    padding: 0px 18px 0px 0px;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .floatingDiv>:nth-child(1){
+    height: 9vh;
+    width: 13.5vw;
+  }
+  .floatingDiv>:nth-child(2){
+    font-size: 15px;
+  }
+  .floatingDiv{
+    padding: 0px 18px 0px 0px;
+    height: 3rem;
+  }
+}
+

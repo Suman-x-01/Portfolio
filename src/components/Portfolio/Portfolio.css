@@ -1,0 +1,76 @@
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+
+}
+/* heading */
+.portfolio span:nth-of-type(1) {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.portfolio span:nth-of-type(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* slider */
+.portfolio .swiper{
+    overflow: visible!important;
+}
+
+.portfolio-slider {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.portfolio-slider .swiper-slide {
+  width: 20rem;
+}
+.portfolio img {
+  width: 19rem;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  border-radius: 19px;
+}
+
+/* Base styles remain unchanged */
+
+@media (max-width: 1000px) {
+  .portfolio-slider .swiper-slide {
+    width: 18rem; /* Reduce image size slightly */
+  }
+}
+
+@media (max-width: 800px) {
+  .portfolio-slider .swiper-slide {
+    width: 15rem; /* Further reduce image size */
+  }
+  
+  .portfolio-slider {
+    margin-top: 2rem; /* Reduce space between images */
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio-slider {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+  }
+  
+  .portfolio-slider .swiper-slide {
+    width: auto; /* Allow images to maintain their original size */
+    margin-bottom: 1rem; /* Add space between stacked images */
+  }
+
+  .portfolio img {
+    width: auto; /* Ensure images are at their original size */
+    max-width: 100%; /* Prevent overflow */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

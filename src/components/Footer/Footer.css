@@ -1,0 +1,100 @@
+.container {
+  margin-top: 0rem; /* equivalent to mt-20 */
+  padding-bottom: 1rem; 
+}
+.f-highlighted-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff9a00; /* For "text-bright-sun-40" equivalent */
+}
+.f-title {
+  font-size: 2.5rem; /* equivalent to text-4xl */
+  text-align: center;
+  font-weight: bold; /* equivalent to font-semibold */
+  margin-bottom: 2rem; /* equivalent to mb-10 */
+  color: #d4d1d1; /* For "text-mine-shaft-100" equivalent */
+}
+
+.contact-icon {
+  height: 16vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon .items {
+  background-color: black;
+  margin-left: 15px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid rgb(5, 5, 179);
+  color: #fb982f ;
+  box-shadow: 0 0 30px rgb(3, 3, 149);
+}
+
+.contact-icon .items:hover {
+  background-color: rgb(40, 47, 97);
+  box-shadow: var(--box-shadow);
+}
+
+.contact-icon .items .icons {
+  font-size: 2rem;
+}
+
+
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1000px) {
+  .contact-icon .items {
+    height: 60px;
+    width: 60px;
+  }
+  .contact-icon .items .icons {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-icon .items {
+    height: 50px;
+    width: 50px;
+  }
+  .contact-icon .items .icons {
+    font-size: 1.5rem;
+  }
+  .f-highlighted-text{
+    font-size: 1.75rem;
+  }
+.f-title{
+  font-size: 1.75rem;
+}
+}
+@media (max-width:750px) {
+  .f-highlighted-text{
+    font-size: 1.75rem;
+  }
+.f-title{
+  font-size: 1.75rem;
+}
+}
+@media screen and (max-width: 500px) {
+  .contact-icon .items {
+    height: 40px;
+    width: 40px;
+  }
+  .contact-icon .items .icons {
+    font-size: 1.2rem;
+  }
+  .f-title{
+    margin-bottom: .3rem;
+  }
+}
+
+.end-line{
+  color: gray;
+  text-align: center;
+}

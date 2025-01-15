@@ -1,0 +1,119 @@
+/* Base Styles */
+.contact-form {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    gap: 2rem; /* Add gap between left and right sections */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+.awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* gap: 20px; */
+  }
+  
+  .awesome > :nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .awesome > :nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+.c-right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.c-right > form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%; /* Ensure the form takes the available space */
+}
+
+.c-right .user {
+    width: 100%; /* Make input fields take full width */
+    max-width: 20rem; /* Set a maximum width */
+    height: 2rem;
+    padding: 0.3em;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 4rem !important;
+}
+
+.c-blur1 {
+    top: 1rem;
+    left: 8rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .awesome{
+        align-items: center;
+    }
+    .contact-form {
+        flex-direction: column;
+        height: auto; /* Allow height to adjust dynamically */
+    }
+
+    .c-right .user {
+        max-width: 18rem; /* Adjust input size for medium screens */
+    }
+}
+@media (max-width:805px) {
+    .awesome > :nth-child(1) {
+        font-size: 2rem;
+    }
+    .awesome > :nth-child(2) {
+        font-size: 2rem;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .contact-form {
+        padding: 1rem; /* Reduce padding for smaller screens */
+        gap: 1.5rem; /* Adjust gap between sections */
+    }
+
+    .c-right .user {
+        max-width: 16rem; /* Smaller inputs for smaller screens */
+    }
+    .awesome > :nth-child(1) {
+        font-size: 1.75rem;
+    }
+    .awesome > :nth-child(2) {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        flex-direction: column;
+        padding: 1rem; /* Adjust padding for mobile screens */
+        gap: 1rem; /* Reduce gap for mobile screens */
+        height: auto; /* Allow dynamic height adjustment */
+    }
+
+    .c-right .user {
+        width: 100%; /* Input fields take full width */
+        max-width: none; /* Remove max-width on mobile */
+    }
+
+    textarea {
+        height: 3.5rem !important; /* Adjust textarea height for mobile */
+    }
+}

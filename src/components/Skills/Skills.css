@@ -1,0 +1,121 @@
+/* Base Styles */
+.companies-container {
+    margin-top: 5rem; /* equivalent to mt-20 */
+    padding-bottom: 1.25rem; /* equivalent to pb-5 */
+}
+
+.title {
+    font-size: 2.5rem; /* equivalent to text-4xl */
+    text-align: center;
+    font-weight: bold; /* equivalent to font-semibold */
+    margin-bottom: 2.5rem; /* equivalent to mb-10 */
+    color: #d4d1d1; /* For "text-mine-shaft-100" equivalent */
+    margin-top: 10rem;
+}
+
+.highlighted-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff9a00; /* For "text-bright-sun-40" equivalent */
+}
+
+.company-item {
+    margin-left: 2rem; /* equivalent to mx-8 */
+    margin-right: 2rem; /* equivalent to mx-8 */
+    padding-left: 0.5rem; /* equivalent to px-2 */
+    padding-right: 0.5rem; /* equivalent to px-2 */
+    padding-top: 0.25rem; /* equivalent to py-1 */
+    padding-bottom: 0.25rem; /* equivalent to py-1 */
+    border-radius: 1rem; /* equivalent to rounded-xl */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.company-item:hover {
+    background-color: #333333; /* equivalent to hover:bg-mine-shaft-900 */
+}
+
+.company-logo {
+    height: 3.5rem; /* equivalent to h-14 */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+
+    .title {
+        font-size: 2rem; /* Slightly smaller font on medium screens */
+    }
+
+    .company-item {
+        margin-left: 1.5rem; /* Adjust margins for medium screens */
+        margin-right: 1.5rem;
+    }
+
+    .company-logo {
+        height: 3rem; /* Smaller logos for medium screens */
+    }
+}
+@media (max-width:805px) {
+    .title {
+        font-size: 2rem; /* Slightly smaller font on medium screens */
+    }
+
+    .company-item {
+        margin-left: 1.5rem; /* Adjust margins for medium screens */
+        margin-right: 1.5rem;
+    }
+
+    .company-logo {
+        height: 3rem; /* Smaller logos for medium screens */
+    }
+}
+
+@media (max-width: 750px) {
+    .title {
+        font-size: 1.75rem; /* Smaller font for tablets and smaller screens */
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+    .title>:nth-child(1){
+        font-size: 1.75rem;
+    }
+    .companies-container {
+        margin-top: 2rem; /* equivalent to mt-20 */
+        margin-bottom: 3rem; /* equivalent to pb-5 */
+    }
+    .company-item {
+        margin-left: 1rem; /* Further reduce margins on smaller screens */
+        margin-right: 1rem;
+        padding-top: 0.5rem; /* Increase padding for smaller screens */
+        padding-bottom: 0.5rem;
+    }
+
+    .company-logo {
+        height: 2.5rem; /* Further decrease logo size on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .companies-container {
+        margin-top: 3rem; /* Adjust top margin for small screens */
+    }
+
+    .title {
+        font-size: 1.5rem; /* Smaller font for mobile */
+    }
+
+    .company-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 1rem; /* Increase padding on small screens */
+        padding-right: 1rem;
+    }
+
+    .company-logo {
+        height: 2rem; /* Smaller logos on mobile */
+    }
+
+    .highlighted-text {
+        font-size: 1.75rem; /* Adjust highlighted text size */
+    }
+}

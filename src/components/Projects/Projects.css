@@ -1,0 +1,121 @@
+/* Container Styles */
+.projects-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .p-title {
+    font-size: 2.5rem; /* equivalent to text-4xl */
+    text-align: center;
+    font-weight: bold; /* equivalent to font-semibold */
+    margin-bottom: 2.5rem; /* equivalent to mb-10 */
+    color: #d4d1d1; /* For "text-mine-shaft-100" equivalent */
+    padding-bottom: 1rem;
+}
+
+.highlighted-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff9a00; /* For "text-bright-sun-40" equivalent */
+}
+  /* Row Styles */
+  .projects-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  /* Card Container Styles */
+  .project-card-container {
+    margin: 1rem;
+    flex: 0 0 calc(25% - 2rem); /* Responsive grid */
+    max-width: 18rem;
+  }
+  
+  /* Card Styles */
+  .project-card {
+    background-color: #020202; /* bg-dark */
+    color: #f8f9fa; /* text-light */
+    border: 1px solid rgba(50, 17, 240, 0.5);
+    box-shadow: 0 0  40px rgba(50, 17, 240, 0.5);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  /* Image Container */
+  .project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .project-image {
+    width: 250px;
+    height: 200px;
+    border: 1px solid rgba(50, 17, 240, 0.5);
+    box-shadow: 0 0  10px rgba(50, 17, 240, 0.5);
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Card Body Styles */
+  .project-card-body {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Buttons */
+  .project-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: #fff;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .demo-button {
+    background-color: #007bff; /* Bootstrap btn-primary */
+  }
+  .demo-button:hover {
+    background-color: #0256b0; /* Bootstrap btn-primary */
+  }
+  
+  .code-button {
+    background-color: #ff9a00; /* Bootstrap btn-warning */
+  }
+  .code-button:hover{
+    background-color: #ad6904;
+  }
+  
+  @media (max-width:805px) {
+    .p-title {
+        font-size: 2rem; /* Smaller font for tablets and smaller screens */
+    }
+    .highlighted-text{
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width:750px) {
+    .p-title {
+      font-size: 1.75rem; /* Smaller font for tablets and smaller screens */
+  }
+  .highlighted-text{
+    font-size: 1.75rem;
+  }
+  }
