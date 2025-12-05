@@ -2,7 +2,8 @@ import React from "react";
 
 import "./About.css";
 import boy2 from "../../img/boy2.png";
-import SumanKumarNayak from "./SumanKumarNayak.pdf";
+import SumanKumarNayak from "../resume/SumanKumarNayak.pdf";
+
 const About = () => {
   return (
     <div className="about">
@@ -32,13 +33,13 @@ const About = () => {
           </p>
           <ul className="details">
             <li>
-              <strong>Age:</strong> 22
+              <strong>Age:</strong> 23
             </li>
             <li>
-              <strong>Phone:</strong> 9732330000
+              <strong>Phone:</strong> 9732335816
             </li>
             <li>
-              <strong>Email:</strong> nayaksu@gmail.com
+              <strong>Email:</strong> nayaksuman251@gmail.com
             </li>
             <li>
               <strong>Experience:</strong> Fresher

@@ -5,26 +5,28 @@
     height: 80vh;
     margin-top: 4rem;
     padding-top: 3rem;
-    gap: 2rem; /* Add gap between left and right sections */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 2rem;
+    flex-wrap: wrap;
 }
+
 .awesome {
     display: flex;
     flex-direction: column;
     position: relative;
-    /* gap: 20px; */
-  }
-  
-  .awesome > :nth-child(1) {
+}
+
+.awesome > :nth-child(1) {
     color: var(--black);
     font-size: 2.5rem;
     font-weight: bold;
-  }
-  .awesome > :nth-child(2) {
+}
+
+.awesome > :nth-child(2) {
     color: var(--orange);
     font-size: 2.5rem;
     font-weight: bold;
-  }
+}
+
 .c-right {
     display: flex;
     justify-content: center;
@@ -35,66 +37,220 @@
 .c-right > form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
-    width: 100%; /* Ensure the form takes the available space */
+    width: 100%;
 }
 
+/* ----------------------------- */
+/* Input Fields */
+/* ----------------------------- */
+
 .c-right .user {
-    width: 100%; /* Make input fields take full width */
-    max-width: 20rem; /* Set a maximum width */
-    height: 2rem;
-    padding: 0.3em;
+    width: 100%;
+    max-width: 20rem;
+    padding: 0.5rem;
+    height: 2.5rem;
     outline: none;
     border: 2px solid var(--orange);
     border-radius: 8px;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
-textarea {
-    height: 4rem !important;
+/* Textarea */
+textarea.user {
+    height: 5rem !important;
+    resize: vertical;
 }
+
+/* File input styled same as other fields */
+/* .file-label {
+    font-size: 0.9rem;
+    color: #333;
+    align-self: flex-start;
+    margin-left: calc(50% - 10rem);
+}
+
+.file-upload {
+    width: 100%;
+    max-width: 20rem;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 2px dashed var(--orange);
+    background: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.file-upload:hover {
+    background: rgba(255, 165, 0, 0.08);
+} */
+/* ----------------------------- */
+/* File Upload (Elegant Design) */
+/* ----------------------------- */
+
+.file-upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 20rem;
+    gap: 0.4rem;
+}
+
+.file-upload-btn {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 2px solid var(--orange);
+    background: white;
+    color: var(--orange);
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.file-upload-btn:hover {
+    background: rgba(255, 165, 0, 0.12);
+}
+
+/* Hide actual file input */
+.file-hidden-input {
+    display: none;
+}
+
+/* File name + remove button */
+.file-info-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #fff5e6;
+    border-left: 3px solid var(--orange);
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.file-remove-btn {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    padding: 0;
+}
+.fName{
+    color: black;
+}
+/* ----------------------------- */
+/* Error text */
+/* ----------------------------- */
+
+.form-error {
+    color: #d32f2f;
+    font-size: 0.85rem;
+    margin-top: -0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ----------------------------- */
+/* Button */
+/* ----------------------------- */
+
+.button {
+    padding: 0.6rem 1.25rem;
+    border-radius: 12px;
+    border: none;
+    background: var(--orange);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+.button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ----------------------------- */
+/* Toast Notification */
+/* ----------------------------- */
+
+.toast {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background: #333;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.25s ease;
+    z-index: 9999;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --------------------------------------- */
+/* Blur Effect Position */
+/* --------------------------------------- */
 
 .c-blur1 {
     top: 1rem;
     left: 8rem;
 }
 
-/* Responsive Styles */
+/* ----------------------------- */
+/* RESPONSIVE */
+/* ----------------------------- */
+
 @media screen and (max-width: 1024px) {
-    .awesome{
+    .awesome {
         align-items: center;
     }
+
     .contact-form {
         flex-direction: column;
-        height: auto; /* Allow height to adjust dynamically */
+        height: auto;
     }
 
-    .c-right .user {
-        max-width: 18rem; /* Adjust input size for medium screens */
+    .c-right .user,
+    .file-upload {
+        max-width: 18rem;
     }
 }
-@media (max-width:805px) {
-    .awesome > :nth-child(1) {
-        font-size: 2rem;
-    }
+
+@media (max-width: 805px) {
+    .awesome > :nth-child(1),
     .awesome > :nth-child(2) {
         font-size: 2rem;
     }
-
 }
+
 @media screen and (max-width: 750px) {
     .contact-form {
-        padding: 1rem; /* Reduce padding for smaller screens */
-        gap: 1.5rem; /* Adjust gap between sections */
+        padding: 1rem;
+        gap: 1.5rem;
     }
 
-    .c-right .user {
-        max-width: 16rem; /* Smaller inputs for smaller screens */
+    .c-right .user,
+    .file-upload {
+        max-width: 16rem;
     }
-    .awesome > :nth-child(1) {
-        font-size: 1.75rem;
-    }
+
+    .awesome > :nth-child(1),
     .awesome > :nth-child(2) {
         font-size: 1.75rem;
     }
@@ -102,18 +258,18 @@ textarea {
 
 @media screen and (max-width: 480px) {
     .contact-form {
-        flex-direction: column;
-        padding: 1rem; /* Adjust padding for mobile screens */
-        gap: 1rem; /* Reduce gap for mobile screens */
-        height: auto; /* Allow dynamic height adjustment */
+        padding: 1rem;
+        gap: 1rem;
+        height: auto;
     }
 
-    .c-right .user {
-        width: 100%; /* Input fields take full width */
-        max-width: none; /* Remove max-width on mobile */
+    .c-right .user,
+    .file-upload {
+        width: 100%;
+        max-width: none;
     }
 
     textarea {
-        height: 3.5rem !important; /* Adjust textarea height for mobile */
+        height: 3.5rem !important;
     }
 }
