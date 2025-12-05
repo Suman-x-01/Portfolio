@@ -47,7 +47,7 @@ const Intro = () => {
             <span style={{ color: darkMode ? "white" : "" }}>Hello👋🏻 I'm</span>
             <span>Suman Kumar Nayak</span>
             <p>
-              I am a <span ref={typedRef}></span>
+              Aspiring to be a <span ref={typedRef}></span>
             </p>
             {/* <span>Thank You for Your time 🙏🏻</span> */}
           </div>
@@ -65,10 +65,7 @@ const Intro = () => {
             >
               <img src={LinkedIn} alt="" />
             </a>
-            <a
-              rel="stylesheet"
-              href="https://www.instagram.com/its._.me._.s._.u._.m._.a._.n._/?hl=en"
-            >
+            <a rel="stylesheet" href="https://www.instagram.com/i_am_suman._/">
               <img src={Instagram} alt="" />
             </a>
           </div>

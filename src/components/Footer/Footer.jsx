@@ -22,7 +22,7 @@ const Footer = () => {
           data-aos-duration="1000"
         >
           <a
-            href="https://www.instagram.com/its._.me._.s._.u._.m._.a._.n._/?hl=en"
+            href="https://www.instagram.com/i_am_suman._/"
             target="_blank"
             className="items"
             rel="noreferrer"
@@ -46,7 +46,7 @@ const Footer = () => {
             <CiLinkedin className="icons" />
           </a>
           <a
-            href="https://www.google.com"
+            href="https://x.com/"
             target="_blank"
             className="items"
             rel="noreferrer"
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="end-line">
-        <p>Made by @Suman ❤️</p>
+        <p>Made by @codeXsuman ❤️</p>
       </div>
     </>
   );
